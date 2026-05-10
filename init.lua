@@ -174,6 +174,8 @@ do
 
   -- [[ Basic Keymaps ]]
   --  See `:help vim.keymap.set()`
+  vim.keymap.set('n', '<leader>x', ':Ex<CR>', { desc = 'File Explorer'})
+  vim.keymap.set('n', '<leader>w', ':w<CR>', { desc = 'write'})
 
   -- Clear highlights on search when pressing <Esc> in normal mode
   --  See `:help hlsearch`
