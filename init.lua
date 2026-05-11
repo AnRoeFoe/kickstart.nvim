@@ -174,7 +174,6 @@ do
 
   -- [[ Basic Keymaps ]]
   --  See `:help vim.keymap.set()`
-  vim.keymap.set('n', '<leader>x', ':Ex<CR>', { desc = 'File Explorer'})
   vim.keymap.set('n', '<leader>w', ':w<CR>', { desc = 'write'})
 
   -- Clear highlights on search when pressing <Esc> in normal mode
@@ -969,6 +968,9 @@ do
   -- require 'kickstart.plugins.neo-tree'
   -- require 'kickstart.plugins.gitsigns' -- adds gitsigns recommended keymaps
   require 'kickstart.plugins.noice'
+  require 'kickstart.plugins.numbertoggle'
+  require 'kickstart.plugins.neo-tree'
+  require 'kickstart.plugins.vim-fugitive'
 
   -- NOTE: You can add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --
