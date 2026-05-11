@@ -1,0 +1,15 @@
+
+vim.pack.add { 'https://github.com/smolck/command-completion.nvim'}
+require('command-completion').setup {
+	border = 'single', -- What kind of border to use, passed through directly to `nvim_open_win()`,
+	-- see `:help nvim_open_win()` for available options (e.g. 'single', 'double', etc.)
+	max_col_num = 1, -- Maximum number of columns to display in the completion window
+	min_col_width = 20, -- Minimum width of completion window columns
+	use_matchfuzzy = false, -- Whether or not to use `matchfuzzy()` (see `:help matchfuzzy()`) 
+	-- to order completion results
+	highlight_selection = true, -- Whether or not to highlight the currently
+	-- selected item, not sure why this is an option tbh
+	highlight_directories = true, -- Whether or not to higlight directories with
+	-- the Directory highlight group (`:help hl-Directory`)
+	tab_completion = true,
+}
