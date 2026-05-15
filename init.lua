@@ -420,6 +420,8 @@ do
   }
 
   -- Add/delete/replace surroundings (brackets, quotes, etc.)
+  -- NOTE: For saiw) you have to type very fast otherwiese nvim will go into insert mode.
+  -- If you are not that fast at typing you can increase the timeoutlen
   --
   -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
   -- - sd'   - [S]urround [D]elete [']quotes
